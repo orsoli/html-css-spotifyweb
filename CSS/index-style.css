@@ -4,3 +4,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    /* Colors  */
+    --main-col: #141922;
+    --footer-col: #282828;
+    --aside-col: #000000;
+}
+
+/* Generics  */
+body{
+}
+
+/* Utils  */
+
+
+
+
+/* to be deleted  */
+main{
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+    background-color: var(--main-col);
+}
+h1{
+    color: aliceblue;
+}
+
+
+
+
+/* Footer section  */
+footer{
+    background-color: var(--footer-col);
+    height: 100px;
+}
