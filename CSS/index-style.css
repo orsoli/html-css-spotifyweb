@@ -20,20 +20,41 @@ body{
 }
 
 /* Utils  */
+.container{
+
+}
+
+.flex{
+    display: flex;
+}
 
 
 
 
 /* to be deleted  */
 main{
+    display: flex;
     background-color: var(--main-col);
     flex-grow: 1;
     overflow-y: auto;
 }
 
-h1{
+p{
+    overflow: auto;
     color: aliceblue;
 }
+
+aside{
+    flex-shrink: 0;
+    width: 300px;
+    height:100%;
+    background-color: black;
+}
+
+.border{
+    border: 1px dashed red;
+}
+
 
 
 
