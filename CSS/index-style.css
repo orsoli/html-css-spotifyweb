@@ -7,25 +7,72 @@
 
 :root{
     /* Colors  */
-    --main-col: #141922;
-    --footer-col: #282828;
-    --aside-col: #000000;
+    --primary-txt-col: #ffffff;
+    --secondary-txt-col: #797A7F;
+    --main-bg-col: #141922;
+    --footer-bg-col: #282828;
+    --aside-bg-col: #000000;
+
 }
 
 /* Generics  */
 body{
+    color: var(--primary-txt-col);
+    font-family: 'Montserrat';
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
+header{
+    background-color: rgba(184, 18, 24, 0.3);
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    padding: 20px 0;    
+}
+
+section{
+    margin: 10px 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    font-size: 10px;
+    color: var(--secondary-txt-col);
+    text-decoration: none;
+    display: block;
+}
+
 /* Utils  */
 .container{
-
+    width: 100%;
+    margin: 0 10px;
+    overflow: auto;
 }
 
 .flex{
     display: flex;
+}
+
+/* Main  */
+.nav-bar ul{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+/* Footer */
+footer{
+    background-color: var(--footer-bg-col);
+    height: 100px;
+    flex-shrink: 0;
 }
 
 
@@ -34,21 +81,16 @@ body{
 /* to be deleted  */
 main{
     display: flex;
-    background-color: var(--main-col);
+    background-color: var(--main-bg-col);
     flex-grow: 1;
     overflow-y: auto;
-}
-
-p{
-    overflow: auto;
-    color: aliceblue;
 }
 
 aside{
     flex-shrink: 0;
     width: 300px;
     height:100%;
-    background-color: black;
+    background-color: var(--aside-bg-col);
 }
 
 .border{
@@ -59,9 +101,3 @@ aside{
 
 
 
-/* Footer section  */
-footer{
-    background-color: var(--footer-col);
-    height: 100px;
-    flex-shrink: 0;
-}
