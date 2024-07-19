@@ -32,10 +32,12 @@ main{
 }
 
 aside{
-    flex-shrink: 0;
-    width: 300px;
-    height:100%;
     background-color: var(--aside-bg-col);
+    height:100%;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: space-between;
+    padding: 5px 10px;
 }
 
 header{
@@ -58,7 +60,7 @@ footer{
 
 img{
     max-width: 100%;
-    max-height: 100%;
+    display: inline-block;
 }
 
 button{
@@ -78,6 +80,7 @@ section{
 }
 
 ul{
+    font-size: 10px;
     list-style-type: none;
 }
 
@@ -99,11 +102,40 @@ a{
 }
 
 /* Main  */
+
+
+/* aside  */
+.sidebar img{
+    width: 20px;
+    margin: 5px 0;
+}
+
+.sidebar a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.playlist{
+    margin-top: 20px;
+}
+
+.playlist>li{
+    padding: 5px 0;
+}
+
+.label{
+    display: none;
+}
+
+
+/* Header  */
 .nav-bar ul{
     display: flex;
     justify-content: center;
     gap: 10px;
 }
+
 
 
 
@@ -129,6 +161,9 @@ a{
     border: 1px dashed red;
 }
 
+.hidden{
+    display: none;
+}
 
 
 

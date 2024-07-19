@@ -26,7 +26,58 @@
 <body>
     <main>
         <!-- Aside bar  -->
-        <aside class="border">aside</aside>
+        <aside class="sidebar flex border">
+            <!-- navigation list on the top -->
+            <nav class="top-sidebar-nav">
+                <ul>
+                    <!-- Spotify logo  -->
+                    <il>
+                        <a href="#"><img src="./img/logo-small.svg" alt="Spotify"><span class="label">Spotify</span></a>
+                    </il>
+                    <!-- Home logo  -->
+                    <il><a href="#"><img src="./img/home.svg" alt="Home logo"><span class="label">Home</span></a>
+                    </il>
+                    <!-- Search logo  -->
+                    <il>
+                        <a href="#"><img src="./img/search.svg" alt="Search logo"><span class="label">Search</span></a>
+                    </il>
+                    <!-- Library logo  -->
+                    <il>
+                        <a href="#"><img src="./img/libreria.svg" alt="Library logo"><span class="label">Library</span></a>
+                    </il>
+                </ul>
+                <!-- Play list  -->
+                <ul class="playlist hidden">
+                    <li>PLAYLIST</li>
+                    <!-- Add icon  -->
+                    <li><a href="#"><i class="fa-solid fa-square-plus"></i>Crea Playlists</a>
+                    </li>
+                    <li><a href="#">Nome Playlists</a>
+                    <li><a href="#">Nome Playlists</a>
+                    <li><a href="#">Nome Playlists</a>
+                    <li><a href="#">Nome Playlists</a>
+                    <li><a href="#">Nome Playlists</a>
+                    <li><a href="#">Nome Playlists</a>
+                    <li><a href="#">Nome Playlists</a>
+                    </li>
+                </ul>
+
+            </nav>
+            <!-- Bottom sidebar container  -->
+            <div class="btm-sidebar">
+                <!-- download logo  -->
+                <a href="#"><img src="./img/download.svg" alt="download logo">
+                    <span class="label">Install app</span>
+                </a>
+                <hr class="hidden">
+                <!-- profile logo  -->
+                <a href="#"><img src="./img/profile.svg" alt="profile logo">
+                    <span class="label" id="profile">John Doe</span>
+                </a>
+
+            </div>
+
+        </aside>
         <!-- Overflow Container  -->
         <div class="container">
             <!-- Header  -->
@@ -61,8 +112,11 @@
         </div>
     </main>
     <footer class="flex border">
+        <!-- Left side footer  -->
         <div class="footer-left border"></div>
+        <!-- Center side footer  -->
         <div class="footer-cntr border"></div>
+        <!-- Right side footer  -->
         <div class="footer-right border"></div>
     </footer>
 </body>
