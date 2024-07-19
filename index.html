@@ -27,42 +27,47 @@
     <main>
         <!-- Aside bar  -->
         <aside class="sidebar flex border">
-            <!-- navigation list on the top -->
-            <nav class="top-sidebar-nav">
-                <ul>
-                    <!-- Spotify logo  -->
-                    <il>
-                        <a href="#"><img src="./img/logo-small.svg" alt="Spotify"><span class="label">Spotify</span></a>
-                    </il>
-                    <!-- Home logo  -->
-                    <il><a href="#"><img src="./img/home.svg" alt="Home logo"><span class="label">Home</span></a>
-                    </il>
-                    <!-- Search logo  -->
-                    <il>
-                        <a href="#"><img src="./img/search.svg" alt="Search logo"><span class="label">Search</span></a>
-                    </il>
-                    <!-- Library logo  -->
-                    <il>
-                        <a href="#"><img src="./img/libreria.svg" alt="Library logo"><span class="label">Library</span></a>
-                    </il>
-                </ul>
-                <!-- Play list  -->
-                <ul class="playlist hidden">
-                    <li>PLAYLIST</li>
-                    <!-- Add icon  -->
-                    <li><a href="#"><i class="fa-solid fa-square-plus"></i>Crea Playlists</a>
-                    </li>
-                    <li><a href="#">Nome Playlists</a>
-                    <li><a href="#">Nome Playlists</a>
-                    <li><a href="#">Nome Playlists</a>
-                    <li><a href="#">Nome Playlists</a>
-                    <li><a href="#">Nome Playlists</a>
-                    <li><a href="#">Nome Playlists</a>
-                    <li><a href="#">Nome Playlists</a>
-                    </li>
-                </ul>
-
-            </nav>
+            <!-- Top sidebar container  -->
+            <div class="top-sidebar">
+                <!-- Aside header  -->
+                <header class="sidebar-header">
+                    <a href="#"><img src="./img/logo-small.svg" alt="Spotify"><h1 class="label">Spotify</h1></a>
+                </header>
+                <!-- navigation list icons -->
+                <nav>
+                    <ul>
+                        <!-- Spotify logo  -->
+                        
+                        <!-- Home logo  -->
+                        <li><a href="#"><img src="./img/home.svg" alt="Home logo"><span class="label">Home</span></a>
+                        </li>
+                        <!-- Search logo  -->
+                        <li>
+                            <a href="#"><img src="./img/search.svg" alt="Search logo"><span class="label">Search</span></a>
+                        </li>
+                        <!-- Library logo  -->
+                        <li>
+                            <a href="#"><img src="./img/libreria.svg" alt="Library logo"><span class="label">Library</span></a>
+                        </li>
+                    </ul>
+                    <!-- Play list  -->
+                    <ul class="playlist hidden">
+                        <li>PLAYLIST</li>
+                        <!-- Add icon  -->
+                        <li><a href="#"><i class="fa-solid fa-square-plus"></i>Crea Playlists</a>
+                        </li>
+                        <li><a href="#">Nome Playlists</a>
+                        <li><a href="#">Nome Playlists</a>
+                        <li><a href="#">Nome Playlists</a>
+                        <li><a href="#">Nome Playlists</a>
+                        <li><a href="#">Nome Playlists</a>
+                        <li><a href="#">Nome Playlists</a>
+                        <li><a href="#">Nome Playlists</a>
+                        </li>
+                    </ul>
+    
+                </nav>
+            </div>
             <!-- Bottom sidebar container  -->
             <div class="btm-sidebar">
                 <!-- download logo  -->
@@ -74,41 +79,33 @@
                 <a href="#"><img src="./img/profile.svg" alt="profile logo">
                     <span class="label" id="profile">John Doe</span>
                 </a>
-
             </div>
-
         </aside>
         <!-- Overflow Container  -->
         <div class="container">
-            <!-- Header  -->
-            <header class="border flex"><button name="upgrade">EFFETUA L'UPGRADE</button></header>
-            <!-- Nav-bar  -->
-            <nav class="nav-bar border">
-                <ul>
-                    <li><a href="#">IN EVIDENZA</a></li>
-                    <li><a href="#">IN EVIDENZA</a></li>
-                    <li><a href="#">IN EVIDENZA</a></li>
-                    <li><a href="#">IN EVIDENZA</a></li>
-                    <li><a href="#">IN EVIDENZA</a></li>
-                    <li><a href="#">IN EVIDENZA</a></li>
-                </ul>
-            </nav>
+            <!-- Main Header  -->
+            <header class="main-header border flex"><button name="upgrade">EFFETUA L'UPGRADE</button></header>
+            <!-- Nav-bar Header -->
+            <header>
+                <nav class="nav-bar border">
+                    <ul>
+                        <li><a href="#">IN EVIDENZA</a></li>
+                        <li><a href="#">PODCAST</a></li>
+                        <li><a href="#">CLASSIFICHE</a></li>
+                        <li><a href="#">GENERI E MOOD</a></li>
+                        <li><a href="#">NUOVE USCITE</a></li>
+                        <li><a href="#">SCOPRIli</a></li>
+                    </ul>
+                </nav>
+            </header>
             <!-- Recently played section  -->
-            <section class="recently border">RECENTLY SECTION-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, et quas. Molestias tempore rem minima itaque, quae ab temporibus earum sit, nostrum reiciendis repellat error ipsum asperiores eligendi sunt vitae?
-            Facilis, inventore nisi fugit assumenda similique optio, a, ea asperiores laboriosam sed minus ratione ad. Nostrum minima laudantium dignissimos porro fugit vero doloremque amet ad maiores necessitatibus? Nostrum, neque beatae.
-            Veritatis amet accusamus eos vero quis recusandae optio quasi quisquam facere expedita nihil, a non corporis hic ducimus dicta nisi voluptatibus quibusdam sint placeat culpa inventore! Officia perferendis sunt ratione.
-            Officia maxime voluptate dolorem tenetur recusandae. Quaerat fuga saepe impedit. Pariatur nihil, veritatis cumque consectetur alias at dignissimos distinctio dolorem qui et. Fugit laborum nulla modi officiis. Nisi, et exercitationem.
-            Nisi dolores similique deserunt earum debitis aperiam necessitatibus reprehenderit culpa iste id, fuga excepturi doloremque totam nam veritatis non nostrum ipsa? Suscipit distinctio veniam ad aspernatur harum, inventore est dicta!</section>
+            <section class="recently border"><h1>Recently played</h1></section>
 
             <!-- Create playlist section  -->
-            <section class="create border">CREATE SECTION-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, et quas. Molestias tempore rem minima itaque, quae ab temporibus earum sit, nostrum reiciendis repellat error ipsum asperiores eligendi sunt vitae?
-            Facilis, inventore nisi fugit assumenda similique optio,a, ea asperiores laboriosam sed minus ratione ad. Nostrumminima laudantium dignissimos porro fugit vero doloremqueamet ad maiores necessitatibus? Nostrum, neque beatae.
-            Veritatis amet accusamus eos vero quis recusandae optioquasi quisquam facere expedita nihil, a non corporis hicducimus dicta nisi voluptatibus quibusdam sint placeatculpa inventore! Officia perferendis sunt ratione.<section>
+            <section class="create border"><h1>Creato per John Doe</h1></section>
 
             <!-- Most popular section  -->
-            <section class="most-popular border">MOST-POPULAR SECTION-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, et quas. Molestias tempore rem minima itaque, quae ab temporibus earum sit, nostrum reiciendis repellat error ipsum asperiores eligendi sunt vitae?
-            Facilis, inventore nisi fugit assumenda similique optio, a, ea asperioreslaboriosam sed minus ratione ad. Nostrum minima laudantium dignissimosporro fugit vero doloremque amet ad maiores necessitatibus? Nostrum, nequebeatae.
-            Veritatis amet accusamus eos vero quis recusandae optio quasi quisquamfacere expedita nihil, a non corporis hic ducimus dicta nisi voluptatibusquibusdam sint placeat culpa inventore! Officia perferendis sunt ratione.</section>
+            <section class="most-popular border"><h1>Artisti piu populari</h1></section>
         </div>
     </main>
     <footer class="flex border">

@@ -40,18 +40,6 @@ aside{
     padding: 5px 10px;
 }
 
-header{
-    background-color: rgba(7, 11, 18, 0.7);
-    align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 10px;
-    padding: 10px 0;   
-    position: sticky; 
-    top: 0;
-    right: 0;
-    left: 0;
-}
-
 footer{
     background-color: var(--footer-bg-col);
     padding: 10px;
@@ -130,6 +118,18 @@ a{
 
 
 /* Header  */
+.main-header{
+    background-color: rgba(7, 11, 18, 0.7);
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    padding: 10px 0;   
+    position: sticky; 
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
 .nav-bar ul{
     display: flex;
     justify-content: center;
