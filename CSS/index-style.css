@@ -59,7 +59,6 @@ button{
     color: var(--primary-txt-col);
     font-size: 10px;
     font-weight: bolder;
-    margin-right: 10px;
     padding: 5px 20px;
 }
 
@@ -72,7 +71,7 @@ ul{
     list-style-type: none;
 }
 
-a{
+a, p{
     font-size: 10px;
     color: var(--secondary-txt-col);
     text-decoration: none;
@@ -83,10 +82,27 @@ a{
 .container{
     width: 100%;
     overflow: auto;
+    padding: 0 10px;
 }
 
 .flex{
     display: flex;
+}
+
+.row{
+    flex-wrap: wrap;
+}
+
+.col{
+    flex-basis: 50%;
+    height: 200px;
+}
+
+.card{
+}
+
+.brd-radius{
+    border-radius: 50%;
 }
 
 /* Main  */
@@ -122,8 +138,8 @@ a{
     background-color: rgba(7, 11, 18, 0.7);
     align-items: center;
     justify-content: flex-end;
-    margin-bottom: 10px;
-    padding: 10px 0;   
+    margin: 0 -10px;
+    padding: 10px;   
     position: sticky; 
     top: 0;
     right: 0;
@@ -133,6 +149,9 @@ a{
 .nav-bar ul{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    line-height: 20px;
+    padding: 5px;
     gap: 10px;
 }
 
