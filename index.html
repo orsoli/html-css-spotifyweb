@@ -148,12 +148,12 @@
                 <!-- Song cards  -->
                 <div class="row flex border">
                     <div class="col col-4 col-6 border">
-                        <div class="card">
+                        <div class="card border">
                             Song Card
                         </div>
                     </div>
                     <div class="col col-4 col-6 border">
-                        <div class="card">
+                        <div class="card border">
                             Song Card
                         </div>
                     </div>
@@ -167,13 +167,13 @@
                 <p>Piu ascolti, piu accurati saranno i suggerimenti</p>
                 <!-- Song card  -->
                 <div class="row flex border">
-                    <div class="col col-4 col-6 border brd-radius">
-                        <div class="card">
+                    <div class="col col-4 col-6 border">
+                        <div class="card border brd-radius">
                             Song Card
                         </div>
                     </div>
-                    <div class="col col-4 col-6 border brd-radius">
-                        <div class="card">
+                    <div class="col col-4 col-6 border">
+                        <div class="card border brd-radius">
                             Song Card
                         </div>
                     </div>
@@ -183,9 +183,62 @@
     </main>
     <footer class="flex border">
         <!-- Left side footer  -->
-        <div class="footer-left border"></div>
+        <div class="footer-left flex border">
+            <!-- song cover img and title  -->
+            <div class="song flex border">
+                <img src="./img/sinister.jpeg" alt="song cover" id="sinister">
+                <div class="title">
+                    <p>Sinister</p>
+                    <p>Brano Nome</p>
+                </div>
+            <!-- Favorite and open folder  -->
+            </div>
+            <div class="favorite flex border">
+                <!-- List of icons  -->
+                <ul>
+                    <!-- Favorite  -->
+                    <li>
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    </li>
+                    <!-- Folder  -->
+                    <li>
+                        <a href="#"><i class="fa-regular fa-folder"></i></a>
+                    </li>
+                </ul>
+                
+                
+            </div>
+        </div>
         <!-- Center side footer  -->
-        <div class="footer-cntr border"></div>
+        <div class="footer-cntr border">
+            <!-- Media control buttons  -->
+            <div class="media-control">
+                <ul class="flex">
+                    <!-- Shuffle btn  -->
+                    <li>
+                        <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                    </li>
+                    <!-- Previous btn  -->
+                    <li>
+                        <a href="#"><i class="fa-solid fa-backward-step"></i></a>
+                    </li>
+                    <!-- Play btn  -->
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle-play"></i></a>
+                    </li>
+                    <!-- Next btn  -->
+                    <li>
+                        <a href="#"><i class="fa-solid fa-forward-step"></i></a>
+                    </li>
+                    <!-- Repeat btn  -->
+                    <li>
+                        <a href="#"><i class="fa-solid fa-rotate-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Song duration minutes  -->
+            <div class="progres-bar"></div>
+        </div>
         <!-- Right side footer  -->
         <div class="footer-right border"></div>
     </footer>

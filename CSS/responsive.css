@@ -3,11 +3,12 @@ Breakpoints screen
 - xs: 500px
 - sm: 576px 
 - md: 768px
-- lg: 1024px
+- lg: 992px
 */
 
 /* sm screen  */
 @media screen and (min-width: 576px) {
+    /* show all txt names logo in aside bar  */
     .label{
         display: block;
     }
@@ -15,13 +16,20 @@ Breakpoints screen
 
 /* md screen  */
 @media screen and (min-width: 768px) {
+    /* row in 4 colons  */
     .col-4{
         flex-basis: 25%;
+    }
+    /* ul list in the footer left change the direction  */
+    .footer-left>.favorite>ul{
+        display: flex;
+        gap: 5px;
     }
 }
 
 /* lg screen  */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
+    /* row in 6 colons  */
     .col-6{
         flex-basis: calc(100%/6);
     }
