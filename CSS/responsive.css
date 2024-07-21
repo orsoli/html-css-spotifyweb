@@ -8,9 +8,21 @@ Breakpoints screen
 
 /* sm screen  */
 @media screen and (min-width: 576px) {
+    /* Hidden small logo  */
+    .hidden-sm{
+        display: none;
+    }
+    /* Show the normal logo with text text   */
+    .hidden-xs{
+        display: block;
+    }
     /* show all txt names logo in aside bar  */
     .label{
         display: block;
+    }
+    /* Download icon flex start in main axis  */
+    .sidebar a{
+        justify-content: flex-start;
     }
 }
 

@@ -31,13 +31,14 @@
             <div class="top-sidebar">
                 <!-- Aside header  -->
                 <header class="sidebar-header">
-                    <a href="#"><img src="./img/logo-small.svg" alt="Spotify"><h1 class="label">Spotify</h1></a>
+                    <!-- Spotify sm-logo  -->
+                    <a href="#"><img src="./img/logo-small.svg" alt="Spotify" class="hidden-sm" id="sm-logo"></a>
+                    <!-- Spotify logo  -->
+                    <a href="#"><img src="./img/logo.svg" alt="Spotify" class="hidden-xs" id="logo"></a>
                 </header>
                 <!-- navigation list icons -->
                 <nav>
                     <ul>
-                        <!-- Spotify logo  -->
-                        
                         <!-- Home logo  -->
                         <li><a href="#"><img src="./img/home.svg" alt="Home logo"><span class="label">Home</span></a>
                         </li>
@@ -47,11 +48,11 @@
                         </li>
                         <!-- Library logo  -->
                         <li>
-                            <a href="#"><img src="./img/libreria.svg" alt="Library logo"><span class="label">Library</span></a>
+                            <a href="#"><img src="./img/libreria.svg" alt="Library logo"><span class="label">La tua libreria</span></a>
                         </li>
                     </ul>
                     <!-- Play list  -->
-                    <ul class="playlist hidden">
+                    <ul class="playlist label">
                         <li>PLAYLIST</li>
                         <!-- Add icon  -->
                         <li><a href="#"><i class="fa-solid fa-square-plus"></i>Crea Playlists</a>
@@ -71,14 +72,15 @@
             <!-- Bottom sidebar container  -->
             <div class="btm-sidebar">
                 <!-- download logo  -->
-                <a href="#"><img src="./img/download.svg" alt="download logo">
+                <a href="#"><img src="./img/download.svg" alt="download logo" id="download-icon">
                     <span class="label">Install app</span>
                 </a>
-                <hr class="hidden">
+                <hr class="hidden-xs">
                 <!-- profile logo  -->
-                <a href="#"><img src="./img/profile.svg" alt="profile logo">
-                    <span class="label" id="profile">John Doe</span>
-                </a>
+                <div class="profile flex">
+                    <img src="./img/profile.svg" alt="profile logo" id="profile-icon">
+                    <span class="label">John Doe</span>
+                </div>
             </div>
         </aside>
         <!-- Overflow Container  -->
@@ -268,17 +270,21 @@
         <!-- Right side footer  -->
         <div class="footer-right flex border">
             <!-- list icons right footer  -->
-            <ul>
-                <li class="flex">
+            <ul class="flex">
+                <li>
                     <a href="#"><i class="fa-solid fa-list"></i></a>
+                </li>
+                <li>
                     <a href="#"><i class="fa-solid fa-desktop"></i></a>
+                </li>
+                <li>
                     <a href="#"><i class="fa-solid fa-volume-high"></i></a>
-                    <a href="#">
-                        <div class="progress-bar-100">
-                            <!-- time now  -->
-                            <div class="progress-bar-30"></div>
-                        </div>
-                    </a>
+                </li>   
+                <li>
+                    <div class="progress-bar-100">
+                        <!-- time now  -->
+                        <div class="progress-bar-30"></div>
+                    </div>
                 </li>
             </ul>
         </div>
