@@ -20,6 +20,14 @@ Breakpoints screen
     .label{
         display: block;
     }
+    /* Eleminate the padding space on aside bar */
+    aside{
+        padding: 0;
+    }
+    /* Show left active border  */
+    .left-active-border{
+        display: block;
+    }
     /* Download icon flex start in main axis  */
     .sidebar a{
         justify-content: flex-start;

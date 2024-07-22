@@ -103,6 +103,17 @@ hr{
 }
 
 /* Utils  */
+.btm-active-border{
+    border-bottom: 1px solid #ADFF30;
+    width: 40%;
+}
+
+.left-active-border{
+    border: 1px solid #ADFF30;
+    display: none;
+    height: 20px;
+}
+
 .brd-radius{
     border-radius: 50%;
 }
@@ -202,6 +213,7 @@ section>h1{
 .sidebar a{
     align-items: center;
     display: flex;
+    /* margin: var(--xs) 0 var(--xs) var(--sm); */
     justify-content: center;
     gap: var(--xs);
 }
@@ -224,8 +236,13 @@ section>h1{
 
 /* Aside header  */
 #logo{
-    margin: 0 var(--lg) var(--sm) 0;
+    margin: var(--xs) var(--lg) var(--sm) var(--sm);
     width: 90px;
+}
+
+.fa-square-plus{
+    scale: 3;
+    margin: var(--sm);
 }
 
 /* Bottom side bar  */
@@ -390,18 +407,7 @@ button:hover{
 
 
 
-
-
 /* to be deleted  */
 .border{
     border: 1px dashed red;
-}
-
-.btm-active-border{
-    border-bottom: 1px solid #ADFF30;
-    width: 40%;
-}
-
-.left-active-border{
-    border-left: 1px solid #ADFF30;
 }
