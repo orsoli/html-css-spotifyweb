@@ -95,6 +95,7 @@ hr{
 
 .card{
     text-align: center;
+    position: relative;
 }
 
 .col{
@@ -249,7 +250,7 @@ align-items: center;
     color: var(--primary-txt-col);
     font-size: 14px;
 }
-.media-control .fa-circle-play{
+.fa-circle-play{
     font-size: 30px;
 }
 
@@ -282,8 +283,8 @@ align-items: center;
 .thumb{
     background-color: var(--primary-txt-col);
     display: none;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     translate: -50% -50%;
 }
@@ -333,6 +334,15 @@ button:hover{
     display: block;
 }
 
+.card:hover .overlay{
+    cursor: pointer;
+    display: block;
+}
+
+.card:hover img{
+    filter: brightness(50%);
+}
+
 
 
 
@@ -350,6 +360,9 @@ button:hover{
     border-left: 1px solid #ADFF30;
 }
 
+.overlay{
+    display: none;
+}
 
 
 
