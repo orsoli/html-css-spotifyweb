@@ -20,15 +20,9 @@
 body{
     color: var(--primary-txt-col);
     font-family: 'Montserrat';
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 main{
-    display: flex;
-    background-color: var(--main-bg-col);
-    flex-grow: 1;
     overflow-y: auto;
 }
 
@@ -59,8 +53,9 @@ button{
 
 footer{
     background-color: var(--footer-bg-col);
-    padding: 10px;
+    height: 100px;
     justify-content: space-between;
+    padding: 10px;
 }
 
 
@@ -105,7 +100,6 @@ hr{
 
 .container{
     width: 100%;
-    overflow: auto;
     padding: 0 10px;
 }
 
@@ -121,6 +115,19 @@ hr{
     flex-wrap: wrap;
     margin: 10px -5px;
 } 
+
+.wrapper{
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Up container  */
+.up-container{
+    display: flex;
+  background-color: var(--main-bg-col);
+  flex-grow: 1;
+  overflow-y: auto;
+}
 
 /* Main  */
 
@@ -139,6 +146,7 @@ section>h1{
     top: 0;
     right: 0;
     left: 0;
+    z-index: 1;
 }
 
 .nav-bar ul{
@@ -363,6 +371,7 @@ button:hover{
 .overlay{
     display: none;
 }
+
 
 
 
