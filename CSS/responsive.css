@@ -32,6 +32,10 @@ Breakpoints screen
     .sidebar a{
         justify-content: flex-start;
     }
+    /* Top sidebar  */
+    .sidebar-icons{
+        margin-left: var(--sm);
+    }
 }
 
 /* md screen  */

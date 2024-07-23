@@ -112,6 +112,8 @@ hr{
     border: 1px solid #ADFF30;
     display: none;
     height: 20px;
+    margin-left: -8px;
+    position: absolute;
 }
 
 .brd-radius{
@@ -216,6 +218,7 @@ section>h1{
     /* margin: var(--xs) 0 var(--xs) var(--sm); */
     justify-content: center;
     gap: var(--xs);
+    position: relative;
 }
 
 .top-sidebar nav img{
@@ -227,6 +230,7 @@ section>h1{
 }
 
 .playlist>li{
+    margin-left: var(--sm);
     padding: var(--xs) 0;
 }
 
@@ -246,6 +250,10 @@ section>h1{
 }
 
 /* Bottom side bar  */
+.btm-sidebar{
+    padding: 0 var(--sm);
+}
+
 #download-icon{
     filter: brightness(50%);
     width: 12px;
@@ -407,7 +415,7 @@ button:hover{
 
 
 
-/* to be deleted  */
-.border{
+/* ! to be deleted  */
+/* .border{
     border: 1px dashed red;
-}
+} */
